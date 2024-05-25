@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admindashboard</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="nav_box">
+        <ul id="navbar">
+            <li id="cop_icon">MADEMEAL</li>
+            <li id="admi_title">ADMINDASHBOARD</li>
+            <li id="profile"><img src="./profile.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div id="logerprofile">
+        <div>Name :</div>
+        <div>User_id :</div>
+        <div>Mobile_Number :</div>
+    </div>
+    <!-- ======================== side navbar start ================== -->
+    <aside id="sidenavbar">
+        <ul id="sidmanubar">
+            <li><a href="#" onclick="deskboardfun()">Dashboard</a></li>
+            <li><a href="#" onclick="recordfun()">Records</a></li>
+            <li><a href="#" onclick="insertfun()">insert</a></li>
+            <li><a href="#" onclick="analysisfun()">Analysis</a></li>
+            <li><a href="#" onclick="aboutfun()">About</a></li>
+            <li><a href="#" onclick="settingfun()">Setting</a></li>
+            <li><a href="#" onclick="logoutfun()">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- ================== deskboard option start ================================ -->
+    <section id="deskboard_section">
+        <div id="deskrecord">
+            <div id="total_partner1">
+                <div id="desk_title">Partner Restaurant</div>
+                <div id="total_partner"></div>
+            </div>
+            <div id="total_customer1">
+                <div id="desk_title">Total customer</div>
+                <div id="total_customer"></div>
+            </div>
+            <div id="total1">
+                <div id="desk_title">Employee</div>
+                <div id="total">80</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =========================== deskboard record page ============================== -->
+
+    <section id="record_section">
+        <div id="search_way"></div>
+        <!-- ======== partner_record ==============  -->
+        <div id="partner_record">
+            <ul id="option_dish_div">
+                <li id="option_manu_dish_title">Partner Records</li>
+                <li id="add_btn"><button onclick="add_partner()">Add Dish</button></li>
+            </ul>
+            <div id="partner_rectable_box">
+                <div id="partner_rectable_slider">
+                    <!-- <table id="parn_data_table">
+                    <tr>
+                        <td id="col-1"></td>
+                        <td id="col-2"></td>
+                        <td id="col-3"></td>
+                        <td id="col-4"></td>
+                        <td id="col-5"></td>
+                        <td id="col-6"></td>
+                        <td id="col-7"></td>
+                        <td id="col-8"></td>
+                        <td id="col-9"></td>
+                        <td id="col-10"><button onclick="updata()">update</button></td>
+                        <td id="col-11"><button onclick="remove()">delete</button></td>
+                
+                
+                    </tr>
+                </table> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ======== customer_record ==============  -->
+        <div id="customer_record">
+            <ul id="option_dish_div">
+                <li id="option_manu_dish_title">Customer Records</li>
+                <li id="add_btn"><button onclick="add_customer()">Add Dish</button></li>
+            </ul>
+            <!-- <div id="record_title"> Customer Records</div> -->
+            <!-- <table id="cust_data_table">
+                <tr>
+                    <td id="col-1">profile photo</td>
+                    <td id="col-2">customer name</td>
+                    <td id="col-3">user name</td>
+                    <td id="col-4">mobilenumber</td> 
+                    <td id="col-7">password</td>
+                    <td id="col-6">country</td>
+                    <td id="col-8">city name and state name</td>
+                    <td id="col-10">Update</td>
+                    <td id="col-11">Delete</td>
+
+                </tr>
+            </table> -->
+            <div id="customer_rectable_slider">
+
+            </div>
+        </div>
+
+    </section>
+    <!-- ================== insert option start ================================ -->
+
+    <section id="insert_section">
+        <div id="option_manu_dish">
+            <ul id="option_dish_div">
+                <li id="option_manu_dish_title">TYPES OF DISHES</li>
+                <li id="add_btn"><button onclick="add_opdish()">Add Dish</button></li>
+            </ul>
+            <div id="option_manu_dish-box">
+                <!-- <table id="option_manu_dish_table">
+                    <tr>
+                        <td id="dish_image"><img src="" alt=""></td>
+                        <td id="dish_name"></td>
+                        <td id="dish_updata" onclick=""></td>
+                        <td id="dish_delete" onclick=""></td>
+                    </tr>
+                </table> -->
+            </div>
+        </div>
+        <hr id="option_rest_dish_breakline">
+        <!-- ===================== Resaurant dish Data =========================== -->
+
+        <div id="restaur_manu_dish">
+            <ul id="option_dish_div">
+                <li id="option_manu_dish_title">Restaurant updata dishes data</li>
+                <li id="add_btn"><button onclick="add_restdish()">Add Dish</button></li>
+            </ul>
+            <div id="rest_dish-box">
+                <!-- <table id="rest_dish-box_table">
+                    <tr>
+                        <td id="colu-1"><img src="" alt=""></td>
+                        <td id="colu-2"></td>
+                        <td id="colu-3"></td>
+                        <td id="colu-4"></td>
+                        <td id="colu-5"></td>
+                        <td id="colu-6"></td>
+                        <td id="colu-7"></td>
+                        <td id="colu-8"></td>
+                        <td id="colu-9"><button onclick="dishupdate()">Update</button></td>
+                        <td id="colu-10"><button onclick="dishdelete()">Delete</button></td>
+                    </tr>
+                </table> -->
+            </div>
+        </div>
+
+    </section>
+<!-- ============================ Admindashboard analisis section====================== -->
+
+<section id="analisis_section">
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*Qo3SUDkIlcnBkHCNnuwgiQ.gif" alt="">
+</section>
+<section id="about_section"></section>
+<section id="setting_section"></section>
+
+    <!-- =========================== footer of Admindeskboard page ======================== -->
+    <footer id="index_footer">
+        <div id="foot_head">
+            <div id="company_TV">
+                MADEMEAL
+            </div>
+            <div id="lag_country">
+                <select id="state">
+                    <option value="mp">Madhya Pradesh</option>
+                    <option value="Rajisthan">Rajisthan</option>
+                    <option value="Rajisthan">UtharPradesh</option>
+                    <option value="Rajisthan">Dehli</option>
+                    <option value="Rajisthan">Gujrat</option>
+                    <option value="Rajisthan">chhatisgarh</option>
+                    <option value="Rajisthan">Himachal Pradesh</option>
+                </select>
+                <!-- <select id="language">
+                    <option value="English"><label for="English">English</label></option>
+                    <option value="Hindi"><label for="Hindi">Hindi</label></option>
+                </select> -->
+
+                <!-- <label for="Hindi" id="language">हिंदी</label> -->
+
+            </div>
+        </div>
+        <section id="foot_info">
+            <ul id="div1">
+                <li id="foot_info_heading">ABOUT MADEMEAL</li>
+                <li><a href="">Who We Are</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">work with Us</a></li>
+                <li><a href="">Investor Relation</a></li>
+                <li><a href="">Report Fraud</a></li>
+                <li><a href="">Press Kit</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <ul id="div2">
+                <li id="foot_info_heading">GLOBALMIXXHUB</li>
+                <li><a href="#">Mademeal</a></li>
+                <li><a href="#">Blinkit</a></li>
+                <li><a href="#">Feeding India</a></li>
+                <li><a href="#">Hyperpure</a></li>
+                <li><a href="#">Zomaland</a></li>
+            </ul>
+            <ul id="div3">
+                <li id="foot_info_heading">FOR RESTAURANTS</li>
+                <li><a href="#">Partner With Us</a></li>
+                <li><a href="#">Apps For You</a></li>
+                <li id="foot_info_heading">FOR INTERPRISES</li>
+                <li><a href="#">Zomato For Interprise</a></li>
+            </ul>
+            <ul id="div4">
+                <li id="foot_info_heading">LEARN MORE</li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+            <ul id="div5">
+                <li id="foot_info_heading">SOCIAL LINKS</li>
+                <li id="social_icon">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><img id="s_img1"
+                            src="data:image/png;base64,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"
+                            alt=""></a></li>
+                <li><a href="#"><img id="s_img2"
+                            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                            alt=""></a></li>
+            </ul>
+        </section>
+        <hr id="cut_line">
+        </hr>
+        <label for="">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy
+            and
+            Content Policies. All trademarks are properties of their respective owners. 20023-24 © GlobleMixhub pvt
+            Lmt. All
+            rights reserved.</label>
+        <div id="developer">© DEVELOPED BY : INDRAJEET YADUWANSHI</div>
+    </footer>
+
+<!-- ================ Partner data registration form ================= -->
+<div id="partner_regis_box">
+    <button id="rest_close_btn" onclick="close_tab()">X</button>
+    <div id="registration">
+        <div>REGISTRATION FOR PARTNER</div><br />
+        <input type="text" name="profile picture" id="Profile_pic" placeholder="Enter Your Profile Photo Url"><br/><br/>
+        <input type="text" name="Name" id="fname" placeholder="Enter Your Name"><br /><br />
+        <input type="text" name="username" id="user_name" placeholder="Enter Your User Name"><br /><br />
+        <input type="tel" name="number" id="number" placeholder="Enter Your Mobile Number"><br /><br />
+        <input type="text" name="shope name" id="Shopname" placeholder="Enter Your Restaurant Name"><br /><br />
+        <input type="text" name="" id="rest_regis_no" placeholder="Enter Your Restaurant Registration No"><br /><br />
+        <input type="text" name="" id="dish_name" placeholder="Enter Your One Best Dish"><br /><br />
+        <input type="password" name="pasaword" id="password" placeholder="Please Create Your Password"><br /><br />
+        <input type="password" name="confirm password" id="cpassword" placeholder="Please Confirm Your Password"><br /><br />
+        <input type="text" name="" id="country" placeholder="Enter Country">
+        <input type="text" name="" id="state" placeholder="Enter State">
+        <input type="text" name="" id="city" placeholder="Enter City"><br /><br />
+        <textarea type="text" name="addrs" id="rest_address"
+            placeholder="Enter Your Restaurant Address"></textarea><br /><br />
+        <button id="regist_btn" onclick="partner_reg()">Sign up</button>
+        <button id="regist_udbtn" onclick="partner_update()">Sign up</button>
+    </div>
+</div>
+<!-- =============== customer data registration form ======================================== -->
+<section id="customer_regist_form">
+    <button id="rest_close_btn" onclick="close_tab()">X</button>
+    <div id="registration1">
+        <div>REGISTRATION</div><br />
+        <input type="text" name="profile picture" id="Profile_pic1" placeholder="Enter Your Profile Photo Url">
+        <div id="pic_error"></div><br /><br />
+        <input type="text" name="Name" id="fname1" placeholder="Enter Your Name">
+        <div id="name_error"></div><br /><br />
+        <input typuser_errore="text" name="username" id="user_name1" placeholder="Enter Your User Name">
+        <div id="user_error"></div><br /><br />
+        <input type="tel" name="number" id="number1" placeholder="Enter Your Mobile Number">
+        <div id="num_error"></div><br /><br />
+        <input type="password" name="pasaword" id="password1" placeholder="Please Create Your Password">
+        <div id="pas_error"></div><br /><br />
+        <input type="password" name="confirm password" id="cpassword1" placeholder="Please Confirm Your Password">
+        <div id="cpas_error"></div><br /><br />
+        <input type="text" name="" id="country1" placeholder="Enter Country"><div id="coun_error"></div>
+        <input type="text" name="" id="state1" placeholder="Enter State"><div id="stat_error"></div>
+        <input type="text" name="" id="city1" placeholder="Enter City"><div id="cit_error"></div><br /><br />
+        <button id="regist_btn1" onclick="Customer_reg()">Sign up</button>
+        <button id="regist_upbtn1" onclick="Cust_reg_update()">submit</button>
+    </div>
+</section>
+
+<!-- =============== optiondish updation form ======================================== -->
+<section id="optdish_update_box">
+    <button id="rest_close_btn" onclick="close_tab()">X</button>
+
+    <div id="some-special-dish">
+        <input type="text" name="" id="product_img1" placeholder="Enter The Product URL"><br><br>
+        <input type="text" name="" id="product_name1" placeholder="Enter Product Name"><br><br>
+        <button id="upload_btn1" onclick="specialdish_update()">Upload</button>
+        <button id="upload_upbtn1" onclick="specialdish_edit()">Upload</button>
+    </div>
+</section>
+
+<!-- =============== optiondish updation form ======================================== -->
+<section id="restdish_update_box">
+    <button id="rest_close_btn" onclick="close_tab()">X</button>
+    <div id="product_update">
+        <div id="product_form_title">Product Detail</div><br><br>
+        <input type="text" name="" id="product_img" placeholder="Enter The Product URL"><br><br>
+        <input type="text" name="" id="offer" placeholder=" Enter Offer"><br><br>
+        <input type="text" name="" id="product_name" placeholder="Enter Product Name"><br><br>
+        <input type="text" name="" id="shop_city_name" placeholder="Enter City Name"><br><br>
+        <input type="text" name="" id="Restaurant_name" placeholder="Enter Restaurant Name"><br><br>
+        <input type="text" name="" id="rating" placeholder="Enter Rating"><br><br>
+        <input type="text" name="" id="price" placeholder="Enter Price in Rupees"><br><br>
+        <input type="text" name="" id="upload_time" placeholder="Show Uploaded Time"><br><br>
+        <button id="upload_btn" onclick="upload()">Upload</button>
+        <button id="upload_upbtn" onclick="restdate_edit()">Upload</button>
+    </div>
+</section>
+
+
+    <script src="./registration.js"></script>
+</body>
+
+</html>

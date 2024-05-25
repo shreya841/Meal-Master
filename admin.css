@@ -1,0 +1,875 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#nav_box {
+    width: 100%;
+    height: 90px;
+}
+
+#navbar {
+    background-color: rgb(13, 13, 13);
+    width: 100%;
+    height: 90px;
+    padding: 3px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+/* #navpart-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width:60%;
+} */
+#profile {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profile img {
+    width: 40px;
+    height: 40px;
+}
+
+#cop_icon {
+    color: white;
+    font-size: 30px;
+}
+
+#admi_title {
+    color: white;
+    font-size: 35px;
+}
+
+#logerprofile {
+    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    display: none;
+}
+
+/* =================== side Navbar start ============================= */
+#sidenavbar {
+    width: 15%;
+    height: 85vh;
+    background-color: black;
+    float: left;
+
+}
+
+#sidmanubar {
+    width: 15%;
+    height: 85vh;
+    list-style: none;
+    /* text-align: center; */
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+}
+
+#sidmanubar li {
+    margin-bottom: 30px;
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+#sidmanubar li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ============================== deskboard start ======================= */
+
+#deskboard_section {
+    width: 100%;
+    /* height: 600px; */
+    /* float: right; */
+    padding-left: 15px;
+    padding-top: 20px;
+    /* border: 1px solid black; */
+    margin-bottom: 400px;
+    /* display: none; */
+}
+
+#deskrecord {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#total_partner1 {
+    width: 280px;
+    height: 150px;
+    border: 4px solid rgb(211, 247, 52);
+    border-radius: 15px;
+    padding-top: 10px;
+    font-size: 30px;
+    background-color: rgb(78, 78, 75);
+    color: white;
+}
+
+#total1,
+#total_customer1 {
+    width: 250px;
+    height: 150px;
+    border: 4px solid rgb(211, 247, 52);
+    border-radius: 15px;
+    padding-top: 10px;
+    font-size: 30px;
+    background-color: rgb(78, 78, 75);
+    color: white;
+}
+
+#total::after {
+    content: "K++";
+    font-size: 20px;
+}
+
+#total_customer::after,
+#total_partner::after {
+    content: "++";
+    font-size: 20px;
+}
+
+#desk_title {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+/*  =============== record section ======================== */
+#record_section {
+    width: 100%;
+    height: auto;
+    /* float: right; */
+    padding-left: 15px;
+    padding-top: 20px;
+    /* border: 1px solid black; */
+    display: none;
+}
+
+#partner_record {
+    width: 100%;
+    height: auto;
+    padding-left: 15%;
+}
+
+#customer_record {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    padding-left: 15%;
+    margin-bottom: 100px;
+
+}
+
+#record_title {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#partner_rectable_box {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    overflow-x: scroll;
+    border: 1px solid black;
+}
+
+#partner_rectable_box::-webkit-scrollbar {
+    display: none;
+}
+
+#partner_rectable_slider {
+    width: 150%;
+    height: auto;
+    position: relative;
+}
+
+#customer_rectable_slider {
+    width: 100%;
+    height: auto;
+}
+
+#parn_data_table {
+    width: 120%;
+    /* border: 1px solid black; */
+}
+
+#cust_data_table {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+#parn_data_table tr td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#cust_data_table tr td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#part_prof_img {
+    width: 60px;
+    height: 60px;
+}
+
+#col-1 {
+    width: 60px;
+    height: 60px;
+}
+
+#col-2 {
+    width: 120px;
+    height: 60px;
+}
+
+#col-3 {
+    width: 150px;
+    height: 60px;
+}
+
+#col-4 {
+    width: 80px;
+    height: 60px;
+}
+
+#col-5 {
+    width: 200px;
+    height: 60px;
+}
+
+#col-6 {
+    width: 60px;
+    height: 60px;
+}
+
+#col-7 {
+    width: 100px;
+    height: 60px;
+}
+
+#col-8 {
+    width: 180px;
+    height: 60px;
+}
+
+#col-9 {
+    width: 300px;
+    height: 60px;
+}
+
+#col-10 {
+    width: 70px;
+    height: 60px;
+}
+
+#col-11 {
+    width: 70px;
+    height: 60px;
+}
+
+/* =========================== insert section ======================= */
+
+#insert_section {
+    width: 100%;
+    height: auto;
+    /* float: right; */
+    padding-top: 20px;
+    /* border: 1px solid black; */
+    display: none;
+}
+
+#option_manu_dish {
+    width: 100%;
+    height: auto;
+    padding-left: 15%;
+
+}
+
+#option_dish_div {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    float: right;
+    padding-right: 60px;
+    margin-bottom: 20px;
+}
+
+#add_btn button {
+    font-size: 16px;
+    font-weight: bold;
+    /* cursor: pointer; */
+    /* border: 2px solid black; */
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+
+#option_manu_dish_title {
+    font-size: 20px;
+    font-weight: bold
+}
+
+#option_manu_dish-box,
+#option_manu_dish_table {
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#option_manu_dish_table tr td {
+    border: 1px solid rgb(55, 54, 54);
+}
+
+#dish_image,
+#dish_image img {
+    width: 80px;
+    height: 60px;
+}
+
+#dish_name {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#dish_updata,
+#dish_delete {
+    width: 100px;
+    text-align: center;
+}
+
+#dish_updata button,
+#dish_delete button {
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+#option_rest_dish_breakline {
+    width: 100%;
+    border: 4px solid black;
+    margin-top: 30px;
+}
+
+/* ================= restaurant manu dish data ================================= */
+#restaur_manu_dish {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding-left: 15%;
+}
+
+#rest_dish-box,
+#rest_dish-box_table {
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#rest_dish-box_table tr td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#colu-1,
+#colu-1 img {
+    width: 80px;
+    height: 80px;
+}
+
+#colu-2 {
+    width: 200px;
+}
+
+#colu-3 {
+    width: 90px;
+}
+
+#colu-4 {
+    width: 70px;
+}
+
+#colu-5 {
+    width: 350px;
+}
+
+#colu-6 {
+    width: 40px;
+}
+
+#colu-7 {
+    width: 100px;
+}
+
+#colu-8 {
+    width: 90px;
+}
+
+#colu-9 {
+    width: 80px;
+}
+
+#colu-10 {
+    width: 80px;
+}
+
+#colu-10 button,
+#colu-9 button {
+    width: 60px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+/* ===================== Admin analysis section ============================ */
+#analisis_section {
+    width: 100%;
+    height: 100vh;
+    /* float: right; */
+    padding-left: 25px;
+    padding-top: 20px;
+    /* border: 1px solid black; */
+    display: none;
+}
+
+#about_section {
+    width: 100%;
+    height: 80vh;
+    /* float: right; */
+    padding-left: 15px;
+    padding-top: 20px;
+    /* border: 1px solid black; */
+    display: none;
+}
+
+#setting_section {
+    width: 100%;
+    height: 80vh;
+    /* float: right; */
+    padding-left: 15px;
+    padding-top: 20px;
+    /* border: 1px solid black; */
+    display: none;
+}
+
+/* =================== Admindashboard footer section ======================*/
+
+#index_footer {
+    background-color: rgb(236, 233, 233);
+    margin-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 18%;
+    padding-right: 2%;
+    /* text-align: center; */
+}
+
+#foot_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0%;
+}
+#company_TV{
+    font-size: 36px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+#com_name {
+    width: 200px;
+}
+
+#state {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+#language {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#language option {
+    font-size: 16px;
+}
+
+#state option {
+    font-size: 16px;
+}
+
+#foot_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 80px;
+    /* align-items: center; */
+}
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div5 {
+    list-style-type: none;
+}
+
+#foot_info_heading {
+    font-size: 16px;
+    font-weight: 580;
+    letter-spacing: 2px;
+    color: rgb(5, 5, 5);
+}
+
+#div1 li,
+#div2 li,
+#div3 li,
+#div4 li,
+#div5 li {
+    margin-top: 10px;
+}
+
+#div1 li a,
+#div2 li a,
+#div3 li a,
+#div4 li a {
+    text-decoration: none;
+    color: rgb(84, 81, 81);
+}
+
+#s_img1 {
+    width: 120px;
+}
+
+#s_img2 {
+    width: 125px;
+    height: 55px;
+}
+
+#social_icon a {
+    margin-left: 8px;
+}
+
+#cut_line {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#developer {
+    text-align: center;
+    margin-top: 10px;
+    color: blue;
+}
+
+/* == starting of admin partner customer optiondish registration dish =============== */
+/*================= partner registration form templet ================== */
+#partner_regis_box {
+    width: 40%;
+    margin-top: 50px;
+    /* padding-top: 20px; */
+    margin-bottom: 50px;
+    margin-left: 35%;
+    background-color: rgb(199, 196, 196);
+    padding-left: 50px;
+    height: 130vh;
+    border-radius: 15px;
+    
+    position: fixed;
+    top:100px;
+    display: none;
+}
+#rest_close_btn {
+    padding: 0px 5px;
+    font-size: 25px;
+    margin-left: 90%;
+    margin-right:10px;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+#registration {
+    width: 440px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px 30px;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#fname,
+#Profile_pic,
+#user_name,
+#number,
+#Shopname,
+#password,
+#cpassword,
+#rest_regis_no,
+#dish_name {
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+#rest_address {
+    width: 350px;
+    height: 50px;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+#country,
+#state,
+#city {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+#regist_btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    display: none;
+}
+#regist_udbtn{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+/* ================ customer registration form templet  ============================ */
+
+#customer_regist_form{
+    width: 40%;
+    margin-top: 50px;
+    /* padding-top: 20px; */
+    margin-bottom: 50px;
+    margin-left: 35%;
+    background-color: rgb(199, 196, 196);
+    padding-left: 50px;
+    height: 90vh;
+    border-radius: 15px;
+    position: fixed;
+    top:100px;
+    display: none;
+}
+
+#registration1 {
+    width: 440px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px 30px;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+}
+#fname1,
+#Profile_pic1,
+#user_name1,
+#number1,
+#password1,
+#cpassword1 {
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 30px;
+}
+#pic_error,
+#name_error,
+#user_error,
+#num_error,
+#pas_error,
+#cpas_error {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 62.8%;
+    display: none;
+}
+#pic_error {
+    top: 21.5vh;
+}
+#name_error {
+    top: 30.7vh;
+}
+#user_error {
+    top: 39.9vh;
+}
+#num_error {
+    top: 49vh;
+}
+#pas_error {
+    top: 58.4vh;
+}
+#cpas_error {
+    top: 67.4vh;
+}
+#country1,
+#state1,
+#city1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+#stat_error,#coun_error,#cit_error {
+    width:10px;
+    height:10px;
+    border:2px solid black;
+    border-radius: 50%;
+    position: fixed;
+    top:74.8vh;
+    display: none;
+}
+#coun_error{
+    left:43.7%;
+}
+#stat_error{
+    left:53.1%;
+}
+#cit_error{
+    left:62.5%;
+}
+#regist_btn1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+}
+#regist_upbtn1{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    display: none;
+}
+
+/* ============== special option_dish form templet ======================*/
+#optdish_update_box{
+    width: 40%;
+    margin-top: 50px;
+    /* padding-top: 20px; */
+    margin-bottom: 50px;
+    margin-left: 35%;
+    background-color: rgb(199, 196, 196);
+    padding-left: 5px;
+    height: 50vh;
+    border-radius: 15px;
+    position: fixed;
+    top:100px;
+    display: none;
+}
+#some-special-dish{
+    width:90%;
+    margin-left: 5%;
+    border: 1px solid black;
+    padding: 30px 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#product_img1, #product_name1{
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 15px;
+    text-transform: capitalize;
+}
+#upload_btn1 {
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-left: 40%;
+}
+#upload_upbtn1 {
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-left: 40%;
+    display: none;
+}
+
+
+/* ================= Restaurant_dish form templet ======================= */
+#restdish_update_box{
+    width: 40%;
+    /* padding-top: 20px; */
+    /* margin-bottom: 50px; */
+    margin-left: 35%;
+    background-color: rgb(199, 196, 196);
+    padding-left: 5px;
+    height: 95vh;
+    border-radius: 15px;
+    position:fixed;
+    top:15px;
+    display: none;
+    z-index: 102;
+}
+#product_update {
+    /* border: 1px solid black; */
+    padding: 10px 80px;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
+#product_form_title {
+    text-align: center;
+    font-size: 25px;
+}
+
+#product_img,
+#offer,
+#product_name,
+#Restaurant_name,
+#rating,
+#price,
+#upload_time,#shop_city_name {
+    width: 380px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+#shop_city_name,#product_name{
+    text-transform: capitalize;
+}
+#upload_btn {
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-left: 40%;
+}
+#upload_upbtn {
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-left: 40%;
+    display: none;
+}
+

@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=PT+Serif:ital@1&family=Playfair+Display:ital@1&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'PT Serif', serif;
+}
+
+#Hindi_translation {
+    display: none;
+}
+
+#English,
+#Hindi {
+    display: none;
+}
+
+#Hindi:checked~#English_translation {
+    display: none;
+}
+
+#Hindi:checked~#Hindi_translation {
+    display: block;
+}
+
+#English:checked~#English_translation {
+    display: block;
+}
+
+#English:checked~#Hindi_translation {
+    display: none;
+}
+
+#language1 {
+    color: white;
+    font-size: 20px;
+}
+
+
+#page_loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 27, 27);
+    /* background-image: url('https://cdn.dribbble.com/users/1215152/screenshots/12858414/food_loader_animation.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh; */
+}
+
+#page_loader img {
+    width: 150px;
+    height: 150px;
+    /* display: none; */
+    border-radius: 50%;
+    animation: loadtea 3s alternate;
+}
+
+@keyframes loadtea {
+    0% {
+        width: 400px;
+        height: 400px;
+    }
+
+    30% {
+        width: 250px;
+        height: 250px;
+    }
+
+    60% {
+        width: 200px;
+        height: 200px;
+    }
+
+    100% {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+#slide {
+    width: 100%;
+    height: 90vh;
+    /* background-image: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png'); */
+    background-image: url('https://www.currytime.co.nz/image/cache/catalog/slider/slide2_new-1915x921.png');
+/* background-image: url('https://www.masterslider.com/wp-content/uploads/sites/5/2016/08/fastfood-slide3.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 25px 12%;
+    /* border: 1px solid black; */
+}
+
+#navbar {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navbar li {
+    margin-left: 25px;
+}
+
+#navbar li a {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+}
+
+#profile_pic_icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+#profile_pic_img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#companyname {
+    width: 100%;
+    height: 100px;
+    font-size: 60px;
+    font-weight: bolder;
+    /* color:rgb(182, 142, 142); */
+    color:silver;
+    letter-spacing: 2px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 28vh;
+}
+
+/* #companyname img {
+    width: 35%;
+} */
+
+#title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title p {
+    font-size: 35px;
+    font-weight: 300;
+    color: white;
+    width: 60%;
+    letter-spacing: 2px;
+}
+
+/* =================== section -2========================= */
+
+#content {
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#popular_loca {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: rgb(59, 56, 56);
+}
+
+#popular_loca img {
+    width: 40px;
+}
+
+#popular_loca_content {
+    width: 70%;
+    height: 40px;
+    margin-left: 15%;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: rgb(46, 44, 44);
+}
+
+/* =========================== section-3 ================================= */
+#city_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cityname_list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
+    width: 90%;
+
+}
+
+#cityname_list li {
+    width: 320px;
+    height: 10vh;
+    border: 1px solid black;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#cityname_list li a {
+    font-size: 20px;
+    color: rgb(37, 37, 37);
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+}
+
+#cityname_list li:hover {
+    scale: 1.004;
+    box-shadow: 2px 2px 10px rgb(211, 205, 205);
+}
+
+/* ========================================= Footer ======================================= */
+#index_footer {
+    background-color: rgb(236, 233, 233);
+    margin-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 7%;
+    padding-right: 7%;
+    /* text-align: center; */
+}
+
+#foot_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0%;
+}
+#company_TV{
+    font-size: 36px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+#com_name {
+    width: 200px;
+}
+
+#state {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+#language {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#language option {
+    font-size: 16px;
+}
+
+#state option {
+    font-size: 16px;
+}
+
+#foot_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 80px;
+    /* align-items: center; */
+}
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div5 {
+    list-style-type: none;
+}
+
+#foot_info_heading {
+    font-size: 16px;
+    font-weight: 580;
+    letter-spacing: 2px;
+    color: rgb(5, 5, 5);
+}
+
+#div1 li,
+#div2 li,
+#div3 li,
+#div4 li,
+#div5 li {
+    margin-top: 10px;
+}
+
+#div1 li a,
+#div2 li a,
+#div3 li a,
+#div4 li a {
+    text-decoration: none;
+    color: rgb(84, 81, 81);
+}
+
+#s_img1 {
+    width: 120px;
+}
+/* #googleplaystor{
+    background-color: rgb(123, 119, 119);
+} */
+
+#s_img2 {
+    width: 120px;
+    height: 40px;
+}
+
+#social_icon a {
+    margin-left: 8px;
+}
+
+#cut_line {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#developer {
+    text-align: center;
+    margin-top: 10px;
+    color: blue;
+}
+
+/*================ Restaurant product html page ===========================  */
+/* #city_by_restaurant{
+    background-color: rgb(253, 252, 252);
+} */
+#second_page_nav {
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+#second_page_nav li a{
+    text-decoration: none;
+}
+
+#restaurant_brandname {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-right: 8%;
+}
+
+#product_search_box {
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px rgb(218, 216, 216);
+}
+
+#search_by_rest_dish {
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-left: 1px solid black;
+    padding-left: 60px;
+}
+
+#search_by_city {
+    width: 200px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+}
+
+#pro_login {
+    margin-left: 13%;
+    font-size: 20px;
+}
+
+#pro_signup {
+    margin-left: 3%;
+    font-size: 20px;
+}
+
+/* ========================== step -2 ======================================================= */
+
+#prod_dinnertiming_manu {
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#prod_delivery_manu {
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 8%;
+    align-items: center;
+    border-bottom: 2px solid rgb(190, 61, 61);
+}
+
+#prod_Dining_manu,
+#prod_Nightlife_manu {
+    width: 200px;
+    height: 80px;
+    margin-left: 7%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-bottom: 2px solid rgb(225, 44, 44); */
+}
+
+#prod_Dining_manu {
+    width: 220px;
+}
+
+#prod_delivery_box,
+#prod_Dining_box,
+#prod_Nightlife_box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#prod_delivery_box img,
+#prod_Dining_box img,
+#prod_Nightlife_box img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#prod_delivery,
+#prod_dining,
+#prod_nightlife {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+/* ========================== step - 3 ============================================ */
+
+#food_searching_way {
+    list-style: none;
+    display: flex;
+    /* justify-content: ; */
+}
+
+#food_searching_way li {
+    width: 120px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+/* ===================================== step 4 =============================================== */
+#show_differ_dishes-box {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(234, 231, 231);
+    margin-top: 50px;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+    padding-left: 50px;
+    
+}
+
+#show_differ_dishes {
+    width: 140%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#left_arrow_sign{
+    cursor: pointer;
+    position: absolute;
+    top:70vh;
+    left:1%;
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: bold;
+}
+#right_arrow_sign{
+    cursor: pointer;
+    position: absolute;
+    top:70vh;
+    right:1%;
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#show_differ_dishes_templet {
+    width: 160px;
+    height: 200px;
+    padding: 20px 20px;
+    /* border: 1px solid black; */
+}
+
+#show_differ_dishes_imgbox {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    /* border: 1px solid black; */
+}
+
+#show_differ_dishes_imgbox img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+
+#show_differ_dishes_name {
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    /* border: 1px solid black; */
+}
+
+/* =============================== city restaurant with dish card =============== */
+#city_by_restaurant {
+    width: 100%;
+    height: auto;
+}
+
+#city_by_restaurant_city-name1 {
+    font-size: 25px;
+    margin-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+#citybyprod {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    grid-column-gap: 80px;
+    grid-row-gap: 40px;
+}
+
+#dish_info-box {
+    width: 360px;
+    height: auto;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+#dish_info-box:hover {
+    border: 1px solid black;
+    scale: 1.1;
+}
+
+#dish_img img {
+    width: 340px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+#offer {
+    position: relative;
+    padding: 4px 15px;
+    top: -40px;
+    left: 0px;
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+}
+
+#food_name {
+    width: 230px;
+    height: auto;
+    text-transform: capitalize;
+}
+
+#restaurant {
+    width: 230px;
+    height: auto;
+    overflow: hidden;
+}
+
+#rating {
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+#Price,
+#time {
+    width: 95px;
+    height: auto;
+    margin-top: 10px;
+}
+#prod_detail {
+    display: flex;
+    justify-content: space-between;
+}
+#safety_meas {
+    margin-top: 10px;
+    color: rgb(136, 132, 132);
+}

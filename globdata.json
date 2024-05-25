@@ -1,0 +1,239 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "Administrator": [
+    {
+      "profile_photo_url": "https://media.istockphoto.com/id/1079901206/photo/3d-render-of-luxury-restaurant-interior.jpg?s=612x612&w=0&k=20&c=kKj5Uw0ZpuWKX8ZX6eXuKGc1sP86fMjIbZJFbWl9-ZM=",
+      "names": "indrajeet",
+      "user_id": "abc@gmail.com",
+      "mobile_number": "9755306511",
+      "Restaurant_name": "vindhya rastaurant",
+      "password": "1234",
+      "confirm_password": "1234",
+      "country_name": "india",
+      "state_name": "Madhya Pradesh",
+      "city_name": "Nasrullaganj",
+      "registration_number": "vindhya123vi89",
+      "Best_dish_of_shop": "Gajar halva",
+      "shop_address": "Mahagaon jadeed, post-Digwad,teh.-R,Dist.- Sehore, Madhya pradesh",
+      "id": 1
+    }
+  ],
+  "Restaurant": [
+    {
+      "profile_photo_url": "https://media.istockphoto.com/id/1079901206/photo/3d-render-of-luxury-restaurant-interior.jpg?s=612x612&w=0&k=20&c=kKj5Uw0ZpuWKX8ZX6eXuKGc1sP86fMjIbZJFbWl9-ZM=",
+      "names": "indrajeet",
+      "user_id": "abc@gmail.com",
+      "mobile_number": "9755306511",
+      "Restaurant_name": "vindhya rastaurant",
+      "password": "1234",
+      "confirm_password": "1234",
+      "country_name": "india",
+      "state_name": "Madhya Pradesh",
+      "city_name": "Nasrullaganj",
+      "registration_number": "vindhya123vi89",
+      "Best_dish_of_shop": "Gajar halva",
+      "shop_address": "Mahagaon jadeed, post-Digwad,teh.-R\nDist.- Sehore, Madhya pradesh",
+      "id": 1
+    },
+    {
+      "profile_photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd4y7zVmHqMDDZPFYCAtIvlWWGYofVYEwNg4AyzbXsRg&s",
+      "names": "rani",
+      "user_id": "rani@12gmail.com",
+      "mobile_number": "9786537654",
+      "Restaurant_name": "ranidurgahvati Restaurant",
+      "password": "123456",
+      "confirm_password": "123456",
+      "country_name": "india",
+      "state_name": "madhya pradesh",
+      "city_name": "sehore",
+      "registration_number": "seh7864543989677889",
+      "Best_dish_of_shop": "Allu paratha",
+      "shop_address": "ranidurgahvati Restaurant busstop sehore mp",
+      "id": 2
+    }
+  ],
+  "Registration": [
+    {
+      "profile_photo_url": "https://images.pexels.com/photos/725458/pexels-photo-725458.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "names": "seeta",
+      "user_id": "sheeta@gmail.com",
+      "mobile_number": "9977768711",
+      "password": "1234",
+      "confirm_password": "1234",
+      "country_name": "india",
+      "state_name": "Madhya Pradesh",
+      "city_name": "indore",
+      "id": 2
+    },
+    {
+      "profile_photo_url": "https://images.pexels.com/photos/675920/pexels-photo-675920.jpeg?cs=srgb&dl=pexels-min-an-675920.jpg&fm=jpg",
+      "names": "sobha",
+      "user_id": "sobha@12gmail.com",
+      "mobile_number": "8976543478",
+      "password": "12345",
+      "confirm_password": "12345",
+      "country_name": "india",
+      "state_name": "Madhya Pradesh",
+      "city_name": "indore",
+      "id": 3
+    },
+    {
+      "profile_photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlkNYcBuqh3cAiX2R_gLzuUxXimfiwpTG4FBTAMkllng&s",
+      "names": "rashmi",
+      "user_id": "rash@gmail.com",
+      "mobile_number": "344554534367",
+      "password": "12345",
+      "confirm_password": "12345",
+      "country_name": "india",
+      "state_name": "Madhya Pradesh",
+      "city_name": "bhopal",
+      "id": 4
+    }
+  ],
+  "Products": [
+    {
+      "product_img": "https://b.zmtcdn.com/data/pictures/chains/3/19281163/ee3a2c96cf8aedc9b2ad3a0a4b144103.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+      "discount": "50% OFF",
+      "product_name": "Biryani",
+      "restaurant_city_name": "Bhopal",
+      "restaurant_name": "Biryani By Kilo Maharana Pratap Nagar, Bhopal",
+      "prod_rating": "4.2",
+      "product_price": "450 foe one",
+      "uploading_time": "12:58",
+      "id": 2
+    },
+    {
+      "product_img": "https://b.zmtcdn.com/data/reviews_photos/628/86eeb50aeff49c15984542b21e999628_1530891880.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+      "discount": "50% OFF",
+      "product_name": "Chicken Tandoor & Kebabs",
+      "restaurant_city_name": "Bhopal",
+      "restaurant_name": "Khan Sahab North Indian, Mughlai, Biryani, Desserts Peer Gate Area, Bhopal",
+      "prod_rating": "4.3",
+      "product_price": "450 for one",
+      "uploading_time": "13:01pm",
+      "id": 3
+    },
+    {
+      "product_img": "https://b.zmtcdn.com/data/pictures/3/2600283/8286ab8482a0823fe72ce4532079e7c8_o2_featured_v2.jpg",
+      "discount": "50% OFF",
+      "product_name": "Chicken Biriyani",
+      "restaurant_city_name": "Bhopal",
+      "restaurant_name": "Lazeez Hakeem, Maharana Pratap Nagar, Bhopal",
+      "prod_rating": "4.1",
+      "product_price": "450 for one",
+      "uploading_time": "13:32pm",
+      "id": 4
+    },
+    {
+      "product_img": "https://b.zmtcdn.com/data/pictures/0/19308830/3617992ccf4387e0deb1156af4b19ebd.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+      "discount": "40% OFF",
+      "product_name": "Dal Angara",
+      "restaurant_city_name": "Indore",
+      "restaurant_name": "North Indian, Chinese, Rajasthani Mangal City Mall, Vijay Nagar, Indore",
+      "prod_rating": "4.2",
+      "product_price": "100 for one",
+      "uploading_time": "23:04",
+      "id": 5
+    },
+    {
+      "product_img": "https://b.zmtcdn.com/data/pictures/chains/8/1400208/cb8ad5f90f76f566e5f10165b983b3b6_o2_featured_v2.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+      "discount": "50% OFF",
+      "product_name": "Sweets",
+      "restaurant_city_name": "Indore",
+      "restaurant_name": "Apna Sweets Desserts, Ice Cream, Juices, Shake, Beverages Vijay Nagar, Indore",
+      "prod_rating": "3.7",
+      "product_price": "100 for one",
+      "uploading_time": "23:11",
+      "id": 6
+    },
+    {
+      "product_img": "https://b.zmtcdn.com/data/pictures/2/1400382/7105664dffc9dbfa6c5e5b325b12e619_o2_featured_v2.jpg",
+      "discount": "50%",
+      "product_name": "north indian dish",
+      "restaurant_city_name": "indore",
+      "restaurant_name": "Shree Gurukripa Hotel Sarwate, North Indian, Chinese, Desserts, Beverages, Biryani Sarwate Bus Stand, Indore",
+      "prod_rating": "4.1",
+      "product_price": "100",
+      "uploading_time": "21",
+      "id": 7
+    }
+  ],
+  "some_spacial_dish": [
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/o2_assets/1ab6211f526df5d920d41787907d1a051632716576.png",
+      "specialdish_name": "Poha",
+      "id": 1
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/o2_assets/2b5a5b533473aada22015966f668e30e1633434990.png",
+      "specialdish_name": "Paratha",
+      "id": 2
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/o2_assets/8dc39742916ddc369ebeb91928391b931632716660.png",
+      "specialdish_name": "Dosa",
+      "id": 3
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/o2_assets/bc0cc8557a06fcd3aacdd7b241cf9db71632716547.png",
+      "specialdish_name": "Samosa",
+      "id": 4
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/dish_images/d9766dd91cd75416f4f65cf286ca84331634805483.png",
+      "specialdish_name": "Idli",
+      "id": 5
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/o2_assets/f9d277eb1668d7abf9235302402b06001632716602.png",
+      "specialdish_name": "Kachori",
+      "id": 6
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/o2_assets/348a8b7fdafc56ba233c77113e7e3a491632716601.png",
+      "specialdish_name": "Jalebi",
+      "id": 7
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/dish_photos/224/42150320317358ff15330ddd0cc5d224.jpg",
+      "specialdish_name": "Aloo Kachhori",
+      "id": 8
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/o2_assets/bf4bde7b78d517ac8460ea03d4c64a7f1632716550.png",
+      "specialdish_name": "Vada",
+      "id": 9
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/dish_photos/646/70c556759b901b0363e7797211656646.jpg",
+      "specialdish_name": "Khaman",
+      "id": 10
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/dish_photos/a9f/232b16b28de4d39b715d96517f650a9f.jpg",
+      "specialdish_name": "Dal Kachori",
+      "id": 11
+    },
+    {
+      "specialdish_image": "https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png",
+      "specialdish_name": "Cake",
+      "id": 12
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #product_update {
+            border: 1px solid black;
+            padding: 30px 50px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        #product_form_title {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        #product_img,
+        #offer,
+        #product_name,
+        #Restaurant_name,
+        #rating,
+        #price,
+        #upload_time,
+        #shop_city_name {
+            width: 400px;
+            height: 35px;
+            border-radius: 10px;
+            padding-left: 15px;
+        }
+
+        #shop_city_name,
+        #product_name {
+            text-transform: capitalize;
+        }
+
+        #upload_btn {
+            padding: 8px 10px;
+            border-radius: 10px;
+            margin-left: 40%;
+        }
+
+        /* ====================== special dish ========================== */
+        #some-special-dish {
+            border: 1px solid black;
+            padding: 30px 50px;
+            border-radius: 10px;
+            /* display: none; */
+        }
+
+        #product_img1,
+        #product_name1 {
+            width: 400px;
+            height: 35px;
+            border-radius: 10px;
+            padding-left: 15px;
+            text-transform: capitalize;
+        }
+
+        #upload_btn1 {
+            padding: 8px 10px;
+            border-radius: 10px;
+            margin-left: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="product_update">
+        <div id="product_form_title">Product Detail</div><br><br>
+        <input type="text" name="" id="product_img" placeholder="Enter The Product URL"><br><br>
+        <input type="text" name="" id="offer" placeholder=" Enter Offer"><br><br>
+        <input type="text" name="" id="product_name" placeholder="Enter Product Name"><br><br>
+        <input type="text" name="" id="shop_city_name" placeholder="Enter City Name"><br><br>
+        <input type="text" name="" id="Restaurant_name" placeholder="Enter Restaurant Name"><br><br>
+        <input type="text" name="" id="rating" placeholder="Enter Rating"><br><br>
+        <input type="text" name="" id="price" placeholder="Enter Price in Rupees"><br><br>
+        <input type="text" name="" id="upload_time" placeholder="Show Uploaded Time"><br><br>
+        <button id="upload_btn" onclick="upload()">Upload</button>
+    </div>
+
+    <!-- ================================== some special dish ====================================== -->
+    <div id="some-special-dish">
+        <input type="text" name="" id="product_img1" placeholder="Enter The Product URL"><br><br>
+        <input type="text" name="" id="product_name1" placeholder="Enter Product Name"><br><br>
+        <button id="upload_btn1" onclick="specialdish_update()">Upload</button>
+    </div>
+    <!-- =========================== javascript file link =============================================== -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
